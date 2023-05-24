@@ -1,0 +1,1 @@
+﻿global using Ticket.Domain.Entities.Commons;

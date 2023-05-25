@@ -25,9 +25,4 @@
 		<ProjectReference Include="..\..\Domains\Ticket.Domain\Ticket.Domain.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<Folder Include="Migrations\" />
-		<Folder Include="Properties\" />
-	</ItemGroup>
-
 </Project>

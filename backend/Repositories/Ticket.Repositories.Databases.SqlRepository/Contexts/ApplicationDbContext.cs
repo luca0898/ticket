@@ -6,6 +6,8 @@ namespace Ticket.Repositories.Databases.SqlRepository.Contexts;
 
 public class ApplicationDbContext : DbContext
 {
+    public ApplicationDbContext Context => this;
+
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
         ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;

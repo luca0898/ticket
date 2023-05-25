@@ -8,15 +8,11 @@ public class MovieMap : IEntityTypeConfiguration<Movie>
 {
     public void Configure(EntityTypeBuilder<Movie> builder)
     {
-        builder
-            .HasKey(prop => prop.Id);
-
-        builder
-            .Property(prop => prop.Id)
-           .HasColumnName("Id")
-           .HasColumnType("uuid")
-           .HasDefaultValueSql("uuid_generate_v4()")
-           .IsRequired();
+        //builder
+        //    .Property(prop => prop.Id)
+        //    .HasColumnType("uuid")
+        //    .HasDefaultValueSql("uuid_generate_v4()")
+        //    .IsRequired();
 
         builder
             .Property(prop => prop.Deleted)
